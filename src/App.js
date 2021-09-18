@@ -13,7 +13,7 @@ function App() {
   }
 
   async function fetchGreeting() {
-    if (typeof window.ehtereum !== 'undefined') {
+    if (typeof window.ethereum !== 'undefined') {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const contract = new ethers.Contract(
         greeterAddress,
